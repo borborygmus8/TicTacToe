@@ -1,6 +1,53 @@
-#board {
-    padding-top: 3em;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+.board {
     text-align: center;
+    position: relative;
+    background-color: #111;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+.message {
+    color: #f00;
+    text-shadow: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .row {
@@ -13,20 +60,68 @@
     float: left;
     height: 100px;
     width: 100px;
+    font-size: 4rem;
+    text-shadow: 0 0 5px #fff;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.row div:hover {
+    background-color: #222;
 }
 
 .top {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #fff;
 }
 
 .bottom {
-    border-top: 1px solid black;
+    border-top: 1px solid #fff;
 }
 
 .left {
-    border-right: 1px solid black;
+    border-right: 1px solid #fff;
 }
 
 .right {
-    border-left: 1px solid black;
+    border-left: 1px solid #fff;
+}
+
+.play-again {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 302px;
+    height: 302px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-again button {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: #0f0;
+    cursor: pointer;
+    display: flex;
+}
+
+.play-again button:hover {
+    color: #f00;
+}
+
+.score {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.score h2 {
+    margin: 10px;
 }
