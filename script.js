@@ -1,4 +1,4 @@
-const button = document.querySelector('.board button'),
+const button = document.querySelector('.play-again'),
     cells = document.querySelectorAll('.row div'),
     message = document.querySelector('.message'),
     pXDiv = document.querySelector('.pxscore'),
