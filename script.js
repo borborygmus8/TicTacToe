@@ -70,4 +70,8 @@ function checkWinner() {
         ) {
         return true;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2e988f0cbc1a07af9498b3e965a126d8d5dcd2a0
