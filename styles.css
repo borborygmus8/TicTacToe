@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: cursive;
+    font-family: 'Press Start 2P', cursive;
     background-color: #000;
     color: #fff;
     margin: 0;
@@ -29,11 +31,14 @@ body {
 .message {
     color: #f00;
     text-shadow: none;
-    height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 h1 {
     font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -81,11 +86,20 @@ h1, h2 {
     border-left: 1px solid #fff;
 }
 
-.board button {
+.play-again {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 302px;
+    height: 302px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-again button {
     padding: 20px 40px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -93,17 +107,21 @@ h1, h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px #fff;
     background-color: #000;
-    font-family: cursive;
-    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    color: #0f0;
     cursor: pointer;
-    display: none;
+    display: flex;
 }
 
-.board button:hover {
+.play-again button:hover {
     color: #f00;
 }
 
 .score {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.score h2 {
+    margin: 10px;
 }
